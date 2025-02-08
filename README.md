@@ -1,4 +1,4 @@
-# FarmMarket
+# FamrMarket
 ## Overview
 Our application will help famers to upload thier product details and buyers get product details and the famers will get thier orders and buyers wants to pay for thier product to famers 
 ## Objective 
@@ -14,5 +14,5 @@ Our application will help famers to upload thier product details and buyers get 
 ### Database
 - MongoDB
 
-### Farm market 
+### Famr market 
 <img src="./Image/Wireframe Review.png">
