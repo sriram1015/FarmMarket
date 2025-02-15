@@ -6,6 +6,10 @@ export default function Product({ product, onAddToCart }) {
     const handleplus = () => {
         setPrice(prevPrice=> prevPrice + parseFloat(product.price));
     }
+    const handleAddToCart= () => {
+       const updatedProduct = {...product, price: price};
+       onAddToCart(updatedProduct);
+    }
     return (
         <div className="bg-white shadow-lg rounded-lg overflow-hidden w-64 m-4 transform transition duration-300 hover:scale-105">
             <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
@@ -15,7 +19,7 @@ export default function Product({ product, onAddToCart }) {
                 <button className="bg-blue-600 rounded-lg hover:bg-blue-700 transition" onClick={handleplus}>+</button>
                 <button 
                     className="w-full mt-3 bg-blue-600 text-white py-2  hover:bg-blue-700 transition"
-                    onClick={() => onAddToCart(product)}
+                    onClick={handleAddToCart}
                 >
                     Add to Cart
                 </button>
